@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { FeaturedProjectsSection } from "@/components/featured-projects"
+import { OutsideOfficeSection } from "@/components/outside-office"
 
 // Mock workshops data
 const workshops = [
@@ -312,6 +313,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Outside of the Office Section*/}
+      <OutsideOfficeSection />
 
       {/* Contact Section */}
       <section id="contact" className="container-custom section-spacing">
