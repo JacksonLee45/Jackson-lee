@@ -128,6 +128,105 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Professional Experience Section */}
+      <section className="container-custom section-spacing">
+        <div className="grid md:grid-cols-3 gap-12">
+          <div>
+            <h2 className="heading-lg mb-6 relative">
+              Professional Experience
+              <span className="absolute -z-10 text-[10rem] font-bold text-muted/20 -top-20 -left-6 opacity-80">02</span>
+            </h2>
+          </div>
+          <div className="md:col-span-2">
+            <div className="space-y-12">
+              {/* Cognizant Position */}
+              <div className="relative pl-8 border-l-2 border-muted">
+                <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1.5"></div>
+                <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                  <h3 className="text-2xl font-bold">Software Engineer</h3>
+                  <div className="flex items-center gap-2">
+                    <span className="text-muted-foreground">Cognizant</span>
+                    <span className="bg-muted px-2 py-1 rounded-full text-xs">2021 - Present</span>
+                  </div>
+                </div>
+                <ul className="space-y-3 mt-4">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Developed enterprise SaaS web applications using C#, .NET, ASP.NET, and JavaScript </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Wrote SQL queries and stored procedures to extract, manipulate and manage data in SQL Server and Oracle databases </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span> Built RESTful APIs integrating frontend and backend systems</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span> Wrote Javascript to employ jQuery and AJAX techniques to enable asynchronous data retrieval reducing loading times </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span> Contributed to the architecture design of a scalable, reliable, service-oriented, message brokered system. </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span> Acted as the primary engineering team representative in client interactions, coordinating seven software deployments </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Managed client relationships during onboarding and provided technical solutions to meet business goals</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Advocated for client needs, leading technical calls with clients to address bugs, feature requests, and technical challenges</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Collaborated with product owners to prioritize and implement new features across 3 client products</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Collaborated and communicated with remote scrum team members in the U.S. and India while following agile best practices</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Hoopologie Position */}
+              <div className="relative pl-8 border-l-2 border-muted">
+                <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1.5"></div>
+                <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                  <h3 className="text-2xl font-bold">Software Engineering Intern</h3>
+                  <div className="flex items-center gap-2">
+                    <span className="text-muted-foreground">Hoopologie</span>
+                    <span className="bg-muted px-2 py-1 rounded-full text-xs">Summer 2020</span>
+                  </div>
+                </div>
+                <ul className="space-y-3 mt-4">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span> Developed an interactive chatbot for Hoopologie's Facebook page, enhancing user engagement by providing an intuitive
+                    platform to explore the company's diverse product line. </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Collaborated in an Agile development environment, leveraging GitHub for version control and Trello for project
+                    management, to deliver features in iterative sprints. </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span> Led the development and integration of PHP-based solutions with Facebook's API, ensuring seamless interaction between the
+                    chatbot and the platform. </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Projects Section */}
       <FeaturedProjectsSection />
 
       {/* Workshops Section */}

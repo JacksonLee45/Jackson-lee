@@ -9,22 +9,22 @@ import { featuredProjects } from "@/app/data/projects";
 export function FeaturedProjectsSection() {
   return (
     <section className="container-custom section-spacing">
-      <div className="flex flex-col md:flex-row justify-between items-baseline mb-16">
-        <h2 className="heading-lg relative">
-          Featured Projects
-          <span className="absolute -z-10 text-[10rem] font-bold text-muted/20 -top-20 -left-6 opacity-80">02</span>
-        </h2>
-        <Link href="/projects" className="link-underline text-lg text-muted-foreground mt-4 md:mt-0">
-          View All Projects
-        </Link>
-      </div>
+        <div className="flex flex-col md:flex-row justify-between items-baseline mb-16">
+            <h2 className="heading-lg relative">
+                Featured Projects
+                <span className="absolute -z-10 text-[10rem] font-bold text-muted/20 -top-20 -left-6 opacity-80">02</span>
+            </h2>
+            <Link href="/projects" className="link-underline text-lg text-muted-foreground mt-4 md:mt-0">
+                View All Projects
+            </Link>
+        </div>
 
       <div className="grid gap-24">
         {featuredProjects.map((project, index) => (
           <div key={project.id} className="group">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <span className="text-8xl font-bold text-muted/30 group-hover:text-muted/50 transition-colors">
+                <span className="text-8xl font-bold text-primary/20 group-hover:text-primary/40 transition-colors">
                   {(index + 1).toString().padStart(2, "0")}
                 </span>
                 <h3 className="text-4xl font-bold mb-6 -mt-8 group-hover:translate-x-2 transition-transform">
