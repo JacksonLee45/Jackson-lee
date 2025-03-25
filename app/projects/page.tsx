@@ -2,81 +2,14 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Github } from "lucide-react"
+import { allProjects } from "../data/projects"
 
 // Mock projects data
-const projects = [
-  {
-    id: 1,
-    title: "Stride Sync",
-    description:
-      "An AI running coach and training platform for runners. Fully deployed, authentication, po",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgresSQL", "Anthropic API"],
-    image: "/placeholder.svg?height=600&width=800",
-    slug: "typography-portfolio",
-    type: "hosted", // hosted project
-  },
-  {
-    id: 2,
-    title: "Crypto Dashboard",
-    description:
-      "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    image: "/placeholder.svg?height=600&width=800",
-    slug: "ecommerce-platform",
-    type: "hosted", // hosted project
-  },
-  {
-    id: 3,
-    title: "Paragliding Weather Checker",
-    description: "A custom CMS built for a publishing company, allowing easy content creation and management.",
-    technologies: ["Next.js", "GraphQL", "PostgreSQL"],
-    image: "/placeholder.svg?height=600&width=800",
-    slug: "paragliding-weather-checker",
-    type: "hosted", // hosted project
-  },
-  {
-    id: 4,
-    title: "Emergency Room Scheduler",
-    description: "A custom scheduler that automatically triages patients as they enter an Emergency Room",
-    technologies: ["C#", "ASP .NET", "MSSQL Server"],
-    image: "/placeholder.svg?height=600&width=800",
-    slug: "er-scheduler",
-    type: "hosted", // hosted project
-  },
-  {
-    id: 5,
-    title: "Algorithm Visualizer",
-    description: "A tool for visualizing common algorithms like sorting, pathfinding, and graph traversal algorithms.",
-    technologies: ["JavaScript", "Canvas API", "Data Structures"],
-    githubUrl: "https://github.com/JacksonLee/algorithm-visualizer",
-    image: "/placeholder.svg?height=600&width=800",
-    type: "github", // GitHub-only project
-  },
-  {
-    id: 6,
-    title: "Compiler Design Project",
-    description: "A simple compiler implementation that demonstrates lexical analysis, parsing, and code generation.",
-    technologies: ["C++", "LLVM", "Automata Theory"],
-    githubUrl: "https://github.com/JacksonLee/mini-compiler",
-    image: "/placeholder.svg?height=600&width=800",
-    type: "github", // GitHub-only project
-  },
-  {
-    id: 7,
-    title: "Operating System Kernel",
-    description:
-      "A minimal operating system kernel implementing basic process scheduling, memory management, and file systems.",
-    technologies: ["C", "Assembly", "OS Theory"],
-    githubUrl: "https://github.com/JacksonLee/mini-os",
-    image: "/placeholder.svg?height=600&width=800",
-    type: "github", // GitHub-only project
-  },
-]
 
 export default function ProjectsPage() {
   // Separate hosted and GitHub-only projects
-  const hostedProjects = projects.filter((project) => project.type === "hosted")
-  const githubProjects = projects.filter((project) => project.type === "github")
+  const hostedProjects = allProjects.filter((project) => project.type === "hosted")
+  const githubProjects = allProjects.filter((project) => project.type === "github")
 
   return (
     <div className="pt-20">

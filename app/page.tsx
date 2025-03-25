@@ -4,6 +4,7 @@ import { ArrowRight, Calendar, Github, Linkedin, Mail, Users } from "lucide-reac
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { FeaturedProjectsSection } from "@/components/featured-projects"
 
 // Mock workshops data
 const workshops = [
@@ -127,58 +128,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Projects Section */}
-      <section className="container-custom section-spacing">
-        <div className="flex flex-col md:flex-row justify-between items-baseline mb-16">
-          <h2 className="heading-lg relative">
-            Featured Projects
-            <span className="absolute -z-10 text-[10rem] font-bold text-muted/20 -top-20 -left-6 opacity-80">02</span>
-          </h2>
-          <Link href="/projects" className="link-underline text-lg text-muted-foreground mt-4 md:mt-0">
-            View All Projects
-          </Link>
-        </div>
-
-        <div className="grid gap-24">
-          {[1, 2, 3].map((project) => (
-            <div key={project} className="group">
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                  <span className="text-8xl font-bold text-muted/30 group-hover:text-muted/50 transition-colors">
-                    0{project}
-                  </span>
-                  <h3 className="text-4xl font-bold mb-6 -mt-8 group-hover:translate-x-2 transition-transform">
-                    Project {project}
-                  </h3>
-                  <p className="text-xl text-muted-foreground mb-8">
-                    A detailed test description of this project, including the problem it solves, the technologies used, and
-                    the challenges overcome during development.
-                  </p>
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="lg"
-                    className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
-                  >
-                    <Link href={`/projects/project-${project}`}>View Project</Link>
-                  </Button>
-                </div>
-                <div className="overflow-hidden rounded-lg">
-                  <div className="aspect-video bg-muted rounded-lg overflow-hidden transition-transform group-hover:scale-105 duration-500">
-                    <Image
-                      src={`/placeholder.svg?height=270&width=480`}
-                      alt={`Project ${project}`}
-                      width={480}
-                      height={270}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <FeaturedProjectsSection />
 
       {/* Workshops Section */}
       <section className="container-custom section-spacing">
