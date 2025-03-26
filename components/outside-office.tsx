@@ -11,15 +11,15 @@ export function OutsideOfficeSection() {
       id: 1,
       name: "Running",
       description: "Marathon enthusiast with a passion for long-distance running. I've completed several marathons across the country, finding that the discipline and endurance required transfers directly to solving complex technical challenges.",
-      image: "/placeholder.svg?height=400&width=600",
-      location: "Various Trails, Colorado",
+      image: "/images/stravaMap.jpg",
+      location: "Pavement, Dirt, and Gravel",
       slug: "running"
     },
     {
       id: 2,
       name: "Paragliding",
       description: "When I'm not debugging code, you might find me soaring through the skies. Paragliding taught me to make calculated decisions while embracing uncertainty – skills that prove invaluable when navigating new technologies.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/paragliding.jpg",
       location: "Boulder, Colorado",
       slug: "paragliding"
     },
@@ -27,7 +27,7 @@ export function OutsideOfficeSection() {
       id: 3,
       name: "Skiing",
       description: "Alpine skiing is my winter passion. Carving through challenging terrain mirrors how I tackle complex projects – with precision, adaptability, and a willingness to adjust course as conditions change.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/skiing.jpg",
       location: "Rocky Mountains",
       slug: "skiing"
     }
@@ -48,11 +48,11 @@ export function OutsideOfficeSection() {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {activities.map((activity) => (
           <Card key={activity.id} className="group overflow-hidden border border-border bg-card">
-            <div className="aspect-video overflow-hidden">
+            <div className="aspect-[4/3] overflow-hidden">
               <Image
                 src={activity.image || "/placeholder.svg"}
                 alt={activity.name}
-                width={600}
+                width={700}
                 height={400}
                 className="w-full h-full object-cover transition-transform group-hover:scale-105 duration-500 opacity-90 group-hover:opacity-100"
               />

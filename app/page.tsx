@@ -147,7 +147,7 @@ export default function HomePage() {
                   <h3 className="text-2xl font-bold">Software Engineer</h3>
                   <div className="flex items-center gap-2">
                     <span className="text-muted-foreground">Cognizant</span>
-                    <span className="bg-muted px-2 py-1 rounded-full text-xs">2021 - Present</span>
+                    <span className="bg-muted px-2 py-1 rounded-full text-xs">2022 - Present</span>
                   </div>
                 </div>
                 <ul className="space-y-3 mt-4">
@@ -296,7 +296,7 @@ export default function HomePage() {
           </div>
           <div className="md:col-span-2">
             <div className="grid grid-cols-2 gap-y-8 gap-x-16">
-              {["React", "Next.js", "TypeScript", "Node.js", "Tailwind CSS", "GraphQL", "MongoDB", "AWS"].map(
+              {["React", "Next.js", "TypeScript", "Node.js", "Tailwind CSS", "GraphQL", "MongoDB", "AWS", "Prompt Engineering"].map(
                 (skill, index) => (
                   <div key={skill} className="border-b border-border pb-2 group">
                     <div className="flex items-baseline">

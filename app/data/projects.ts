@@ -19,7 +19,7 @@ export interface Project {
       description:
         "An AI running coach and training platform for runners. Fully deployed, authentication, po",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgresSQL", "Anthropic API"],
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/images/StrideSyncDark.png",
       slug: "typography-portfolio",
       type: "hosted",
     },
@@ -29,7 +29,7 @@ export interface Project {
       description:
         "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/images/cryptoCompressed.png",
       slug: "ecommerce-platform",
       type: "hosted",
     },
@@ -38,7 +38,7 @@ export interface Project {
       title: "Paragliding Weather Checker",
       description: "A custom CMS built for a publishing company, allowing easy content creation and management.",
       technologies: ["Next.js", "GraphQL", "PostgreSQL"],
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/images/WeatherChecker.png",
       slug: "paragliding-weather-checker",
       type: "hosted",
     },
