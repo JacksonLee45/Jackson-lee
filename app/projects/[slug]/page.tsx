@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { ArrowLeft, ExternalLink, Github } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { getProjectBySlug } from "@/app/data/projects"
 
 // This would typically come from a CMS or database
 const getProject = (slug: string) => {
@@ -33,7 +34,7 @@ const getProject = (slug: string) => {
 }
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = getProject(params.slug)
+  const project = getProjectBySlug(params.slug)
 
   return (
     <div className="pt-20">
@@ -76,7 +77,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         <div className="mb-16">
           <div className="aspect-video bg-zinc-100 rounded-lg overflow-hidden">
             <Image
-              src={project.featuredImage || "/placeholder.svg"}
+              src={project.image || "/placeholder.svg"}
               alt={project.title}
               width={1600}
               height={800}

@@ -9,6 +9,18 @@ export interface Project {
     slug: string;
     type: "hosted" | "github";
     githubUrl?: string;
+    liveUrl?: string;
+    client?: string;
+    challenge?: string;
+    solution?: string;
+    gallery?: string[];
+    year?: string;
+    role?: string;
+    nextProject?: {
+      title?: string;
+      slug?: string;
+    }
+  
   }
   
   // Featured projects are the ones displayed on the homepage
