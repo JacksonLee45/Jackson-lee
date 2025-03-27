@@ -29,21 +29,42 @@ export interface Project {
       id: 1,
       title: "Stride Sync",
       description:
-        "An AI running coach and training platform for runners. Fully deployed, authentication, po",
+        "An AI running coach and training platform for runners. Fully deployed, with authentication and personalized training plans.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgresSQL", "Anthropic API"],
       image: "/images/StrideSyncDark.png",
-      slug: "typography-portfolio",
+      slug: "stride-sync",
       type: "hosted",
+      client: "Personal Project",
+      year: "2024",
+      role: "Full Stack Developer",
+      challenge: "Building an AI-powered platform that can analyze running data and provide personalized training plans with limited training data.",
+      solution: "Implemented advanced prompt engineering techniques with Anthropic's Claude API to create a solution that adapts training plans based on user feedback and performance data.",  
+      gallery: [
+        "/images/StrideSyncLight.png",
+        "/placeholder.svg?height=600&width=800"
+      ],
+      liveUrl: "https://stride-sync.vercel.app/",
+      githubUrl: "https://github.com/JacksonLee45/stride-sync",
+      nextProject: {
+        title: "Crypto Dashboard",
+        slug: "crypto-dashboard"
+      }
     },
     {
       id: 2,
       title: "Crypto Dashboard",
       description:
         "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      technologies: ["React", "Next.js", "Redis", "Upstash", "Security Headers", "API?"],
       image: "/images/cryptoCompressed.png",
-      slug: "ecommerce-platform",
+      slug: "crypto-dashboard",
       type: "hosted",
+      gallery: [
+        "/placeholder.svg?height=600&width=800",
+        "/placeholder.svg?height=600&width=800"
+      ],
+      liveUrl: "https://crypto-dashboard-eta-woad.vercel.app",
+      githubUrl: "https://github.com/JacksonLee45/crypto-dashboard-1",
     },
     {
       id: 3,
@@ -53,6 +74,10 @@ export interface Project {
       image: "/images/WeatherChecker.png",
       slug: "paragliding-weather-checker",
       type: "hosted",
+      gallery: [
+        "/placeholder.svg?height=600&width=800",
+        "/placeholder.svg?height=600&width=800"
+      ],
     },
   ];
   
@@ -67,26 +92,38 @@ export interface Project {
         image: "/placeholder.svg?height=600&width=800",
         slug: "er-scheduler",
         type: "hosted",
+        gallery: [
+          "/placeholder.svg?height=600&width=800",
+          "/placeholder.svg?height=600&width=800"
+        ],
     },
     {
       id: 5,
       title: "Algorithm Visualizer",
       description: "TEMP A tool for visualizing common algorithms like sorting, pathfinding, and graph traversal algorithms.",
       technologies: ["JavaScript", "Canvas API", "Data Structures"],
-      githubUrl: "https://github.com/JacksonLee/algorithm-visualizer",
+      githubUrl: "https://github.com/JacksonLee45/algorithm-visualizer",
       image: "/placeholder.svg?height=600&width=800",
       slug: "temp1",
       type: "github",
+      gallery: [
+        "/placeholder.svg?height=600&width=800",
+        "/placeholder.svg?height=600&width=800"
+      ],
     },
     {
       id: 6,
       title: "Compiler Design Project",
       description: "TEMP A simple compiler implementation that demonstrates lexical analysis, parsing, and code generation.",
       technologies: ["C++", "LLVM", "Automata Theory"],
-      githubUrl: "https://github.com/JacksonLee/mini-compiler",
+      githubUrl: "https://github.com/JacksonLee45/mini-compiler",
       image: "/placeholder.svg?height=600&width=800",
       slug: "temp2",
       type: "github",
+      gallery: [
+        "/placeholder.svg?height=600&width=800",
+        "/placeholder.svg?height=600&width=800"
+      ],
     },
     {
       id: 7,
@@ -94,11 +131,43 @@ export interface Project {
       description:
         "TEMP A minimal operating system kernel implementing basic process scheduling, memory management, and file systems.",
       technologies: ["C", "Assembly", "OS Theory"],
-      githubUrl: "https://github.com/JacksonLee/mini-os",
+      githubUrl: "https://github.com/JacksonLee45/mini-os",
       image: "/placeholder.svg?height=600&width=800",
       slug: "temp3",
       type: "github",
+      gallery: [
+        "/placeholder.svg?height=600&width=800",
+        "/placeholder.svg?height=600&width=800"
+      ]
     },
+    {
+      id: 8,
+      title: "Typography Portfolio",
+      client: "Personal Project",
+      year: "2025",
+      role: "Full Stack Developer",
+      description:
+      "A minimalist portfolio website for a typography designer, featuring a clean layout and beautiful typography.",
+      challenge:
+      "The main challenge was to create a website that showcased the designer's work while also demonstrating typography principles in action. The design needed to be minimal yet impactful, with a focus on readability and visual hierarchy.",
+      solution:
+      "I developed a custom Next.js application with a focus on typography and whitespace. The site features carefully selected font pairings, a responsive layout, and subtle animations that enhance the user experience without distracting from the content.",
+      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
+      image: "/placeholder.svg?height=800&width=1600",
+      slug: "typography-portfolio",
+      type: "github",
+      gallery: [
+      "/placeholder.svg?height=600&width=800",
+      "/placeholder.svg?height=600&width=800",
+      "/placeholder.svg?height=600&width=800",
+      ],
+      liveUrl: "https://example.com",
+      githubUrl: "https://github.com/JacksonLee45/typography-portfolio",
+      nextProject: {
+        title: "E-commerce Platform",
+        slug: "ecommerce-platform",
+      },
+    }
   ];
   
   // Helper function to get a project by slug
