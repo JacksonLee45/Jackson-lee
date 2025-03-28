@@ -35,7 +35,7 @@ export default function ProjectsPage() {
                   className={`grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "md:grid-flow-dense" : ""}`}
                 >
                   <div className={index % 2 === 1 ? "md:col-start-2" : ""}>
-                    <span className="text-8xl font-bold text-muted/30 group-hover:text-muted/50 transition-colors">
+                    <span className="text-8xl font-bold text-primary/20 group-hover:text-primary/40 transition-colors">
                       {(index + 1).toString().padStart(2, "0")}
                     </span>
                     <h2 className="text-4xl font-bold mb-6 -mt-8 group-hover:translate-x-2 transition-transform">

@@ -196,12 +196,12 @@ export default function HomePage() {
           </div>
           <div className="md:col-span-2">
             <div className="grid grid-cols-2 gap-y-8 gap-x-16">
-              {["React", "Next.js", "TypeScript", "Node.js", "Tailwind CSS", "GraphQL", "MongoDB", "AWS", "Prompt Engineering"].map(
+              {["C#", "React", "TypeScript", "Next.js",  "SQL", "Angular", "AWS", "Azure", "Tailwind CSS", "Python", "Prompt Engineering", "API Development"].map(
                 (skill, index) => (
                   <div key={skill} className="border-b border-border pb-2 group">
                     <div className="flex items-baseline">
                       <span className="text-sm text-muted-foreground mr-4 group-hover:text-foreground transition-colors">
-                        {(index + 1).toString().padStart(2, "0")}
+                        -
                       </span>
                       <span className="text-2xl group-hover:translate-x-2 transition-transform">{skill}</span>
                     </div>

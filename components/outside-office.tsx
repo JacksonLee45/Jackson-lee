@@ -72,7 +72,7 @@ export function OutsideOfficeSection() {
                 variant="outline"
                 className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
               >
-                <Link href={`/activities/${activity.slug}`}>Learn More</Link>
+                <Link href={"/outside"}>Learn More</Link>
               </Button>
             </CardFooter>
           </Card>
