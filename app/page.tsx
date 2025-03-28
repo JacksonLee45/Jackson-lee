@@ -237,7 +237,7 @@ export default function HomePage() {
               </a>
               <a href="https://www.linkedin.com/in/jackson-leeee" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
                 <Linkedin className="h-6 w-6 group-hover:scale-110 transition-transform" />
-                <span className="link-underline">linkedin.com/in/jackson-leeee</span>
+                <span className="link-underline">linkedin.com/in/Jackson-Leeee</span>
               </a>
               <a href="https://github.com/JacksonLee45" target="_blank" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
                 <Github className="h-6 w-6 group-hover:scale-110 transition-transform" />
