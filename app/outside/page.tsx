@@ -153,7 +153,7 @@ export default function OutsidePage() {
               <div key={activity.id} className="border-b border-border pb-2 group">
                 <div className="flex items-baseline">
                   <span className="text-sm text-muted-foreground mr-4 group-hover:text-foreground transition-colors">
-                    {(index + 1).toString().padStart(2, "0")}
+                    -
                   </span>
                   <span className="text-2xl group-hover:translate-x-2 transition-transform">{activity.name}</span>
                 </div>

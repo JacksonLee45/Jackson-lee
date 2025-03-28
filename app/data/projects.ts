@@ -30,7 +30,7 @@ export interface Project {
       title: "Stride Sync",
       description:
         "An AI running coach and training platform for runners. Fully deployed, with authentication and personalized training plans.",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgresSQL", "Anthropic API"],
+      technologies: ["TypeScript", "Next.js", "PostgresSQL", "Tailwind CSS",  "Anthropic API"],
       image: "/images/StrideSyncDark.png",
       slug: "stride-sync",
       type: "hosted",
@@ -54,8 +54,8 @@ export interface Project {
       id: 2,
       title: "Crypto Dashboard",
       description:
-        "Analytics dashboard integrated with CoinGeckoAPI for Cryptocurrencies.",
-      technologies: ["React", "Next.js", "Redis", "Upstash", "Security Headers", "API Rate Limiting", "Request Logging and Tracing"],
+        "Analytics dashboard integrated with CoinGeckoAPI for cryptocurrencies.",
+      technologies: ["Typescript", "Next.js", "Redis", "Upstash", "Security Headers", "API Rate Limiting", "Request Logging and Tracing"],
       image: "/images/cryptoCompressed.png",
       slug: "crypto-dashboard",
       type: "hosted",
@@ -69,8 +69,8 @@ export interface Project {
     {
       id: 3,
       title: "Paragliding Weather Checker",
-      description: "A fully deployed website for checking Paragliding weather conditions",
-      technologies: ["Next.js", "GraphQL", "PostgreSQL"],
+      description: "A fully deployed website for checking paragliding weather conditions.",
+      technologies: ["React", "Javascript", "PostgreSQL", "AWS Lamdba", "AWS API Gateway"],
       image: "/images/WeatherChecker.png",
       slug: "paragliding-weather-checker",
       type: "hosted",
@@ -87,7 +87,7 @@ export interface Project {
     {
         id: 4,
         title: "Emergency Room Scheduler",
-        description: "A custom scheduler that automatically triages patients as they enter an Emergency Room",
+        description: "A custom scheduler that automatically triages patients as they enter an Emergency Room.",
         technologies: ["C#", "ASP .NET", "MSSQL Server"],
         image: "/placeholder.svg?height=600&width=800",
         slug: "er-scheduler",
@@ -99,6 +99,19 @@ export interface Project {
     },
     {
       id: 5,
+      title: "Portfolio Website",
+      description: "This website you're currently on!",
+      technologies: ["Next.js", "Typescript", "Tailwind CSS"],
+      image: "/placeholder.svg?height=600&width=800",
+      slug: "portfolio",
+      type: "hosted",
+      gallery: [
+        "/placeholder.svg?height=600&width=800",
+        "/placeholder.svg?height=600&width=800"
+      ],
+  },
+    {
+      id: 6,
       title: "Algorithm Visualizer",
       description: "TEMP A tool for visualizing common algorithms like sorting, pathfinding, and graph traversal algorithms.",
       technologies: ["JavaScript", "Canvas API", "Data Structures"],
@@ -112,7 +125,7 @@ export interface Project {
       ],
     },
     {
-      id: 6,
+      id: 7,
       title: "Compiler Design Project",
       description: "TEMP A simple compiler implementation that demonstrates lexical analysis, parsing, and code generation.",
       technologies: ["C++", "LLVM", "Automata Theory"],
@@ -126,7 +139,7 @@ export interface Project {
       ],
     },
     {
-      id: 7,
+      id: 8,
       title: "Operating System Kernel",
       description:
         "TEMP A minimal operating system kernel implementing basic process scheduling, memory management, and file systems.",
@@ -141,7 +154,7 @@ export interface Project {
       ]
     },
     {
-      id: 8,
+      id: 9,
       title: "Typography Portfolio",
       client: "Personal Project",
       year: "2025",

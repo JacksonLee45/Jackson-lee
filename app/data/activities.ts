@@ -51,12 +51,12 @@ export interface Activity {
         },
         {
           name: "Cirque Series: Killington",
-          date: "July 11th, 2025",
+          date: "June 28th, 2025",
           location: "Killington, VT",
           goal: "Have Fun",
         },
         {
-          name: "Kent One Mile",
+          name: "Brooklyn Mile",
           date: "October 12, 2025",
           location: "Brooklyn, NY",
           goal: "Sub 0:05",
