@@ -55,7 +55,7 @@ export interface Project {
       title: "Crypto Dashboard",
       description:
         "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
-      technologies: ["React", "Next.js", "Redis", "Upstash", "Security Headers", "API Rate Limiting", "Security Headers", "Request Logging and Tracing"],
+      technologies: ["React", "Next.js", "Redis", "Upstash", "Security Headers", "API Rate Limiting", "Request Logging and Tracing"],
       image: "/images/cryptoCompressed.png",
       slug: "crypto-dashboard",
       type: "hosted",

@@ -68,7 +68,7 @@ export default function HomePage() {
             I've specialized in building full-stack web solutions at Cognizant using C#, .NET, SQL, and JavaScript.
             </p>
             <p className="body-lg mb-6">
-            My professional strength lies in translating complex technical concepts into business value. 
+            My professional strength lies in translating complex technical concepts into business value *TODO: Revise Sentence, business first tech second*. 
             I thrive when leading client conversations about system enhancements, feature development, 
             and technical challenges. By successfully managing multiple software deployments, I've 
             demonstrated my ability to deliver solutions that address immediate needs while 
@@ -80,14 +80,6 @@ export default function HomePage() {
              my approach to both code and life. This duality enables me to transform workplace complexity 
              into elegant solutions while embracing calculated challenges in nature.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Button asChild variant="outline" size="lg">
-                <Link href="/blog">Read My Blog</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link href="/workshops">View Workshops</Link>
-              </Button>
-            </div>
           </div>
         </div>
       </section>
@@ -193,8 +185,6 @@ export default function HomePage() {
       {/* Featured Projects Section */}
       <FeaturedProjectsSection />
 
-      
-
       {/* Skills Section */}
       <section className="container-custom section-spacing">
         <div className="grid md:grid-cols-3 gap-12">
@@ -243,56 +233,17 @@ export default function HomePage() {
             <div className="flex flex-col gap-6">
               <a href="#" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
                 <Mail className="h-6 w-6 group-hover:scale-110 transition-transform" />
-                <span className="link-underline">Jackson.Lee@example.com</span>
+                <span className="link-underline">Jacksonhlee1@gmail.com</span>
               </a>
-              <a href="#" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
+              <a href="https://www.linkedin.com/in/jackson-leeee" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
                 <Linkedin className="h-6 w-6 group-hover:scale-110 transition-transform" />
-                <span className="link-underline">linkedin.com/in/JacksonLee</span>
+                <span className="link-underline">linkedin.com/in/jackson-leeee</span>
               </a>
-              <a href="#" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
+              <a href="https://github.com/JacksonLee45" target="_blank" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
                 <Github className="h-6 w-6 group-hover:scale-110 transition-transform" />
                 <span className="link-underline">github.com/JacksonLee45</span>
               </a>
             </div>
-          </div>
-          <div>
-            <form className="flex flex-col gap-8">
-              <div>
-                <label htmlFor="name" className="block text-lg mb-2 font-medium">
-                  Name
-                </label>
-                <input
-                  id="name"
-                  type="text"
-                  className="w-full border-b-2 border-input py-3 text-xl bg-transparent focus:outline-none focus:border-primary transition-colors"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-lg mb-2 font-medium">
-                  Email
-                </label>
-                <input
-                  id="email"
-                  type="email"
-                  className="w-full border-b-2 border-input py-3 text-xl bg-transparent focus:outline-none focus:border-primary transition-colors"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-lg mb-2 font-medium">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="w-full border-b-2 border-input py-3 text-xl bg-transparent focus:outline-none focus:border-primary transition-colors"
-                ></textarea>
-              </div>
-              <div>
-                <Button size="lg" className="text-lg px-8 w-full md:w-auto">
-                  Send Message
-                </Button>
-              </div>
-            </form>
           </div>
         </div>
       </section>
