@@ -15,7 +15,7 @@ export function Navigation() {
   const routes = [
     { name: "Home", path: "/" },
     { name: "Projects", path: "/projects" },
-    { name: "Workshops", path: "/workshops" },
+    { name: "Outside the Office", path: "/outside" },
     { name: "Contact", path: "/#contact" },
   ]
 

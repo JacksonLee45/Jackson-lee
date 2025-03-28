@@ -7,43 +7,6 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { FeaturedProjectsSection } from "@/components/featured-projects"
 import { OutsideOfficeSection } from "@/components/outside-office"
 
-// Mock workshops data
-const workshops = [
-  {
-    id: 1,
-    title: "Advanced React Patterns",
-    description: "Learn advanced React patterns and techniques to build scalable applications.",
-    date: "April 15, 2025",
-    time: "10:00 AM - 2:00 PM",
-    location: "Online",
-    image: "/placeholder.svg?height=300&width=500",
-    status: "Upcoming",
-    slug: "advanced-react-patterns",
-  },
-  {
-    id: 2,
-    title: "TypeScript for JavaScript Developers",
-    description: "A comprehensive introduction to TypeScript for experienced JavaScript developers.",
-    date: "May 10, 2025",
-    time: "9:00 AM - 12:00 PM",
-    location: "Tech Hub, San Francisco",
-    image: "/placeholder.svg?height=300&width=500",
-    status: "Upcoming",
-    slug: "typescript-for-javascript-developers",
-  },
-  {
-    id: 3,
-    title: "Building with Next.js",
-    description: "Explore the features of Next.js and learn how to build performant web applications.",
-    date: "March 5, 2025",
-    time: "1:00 PM - 5:00 PM",
-    location: "Online",
-    image: "/placeholder.svg?height=300&width=500",
-    status: "Past",
-    slug: "building-with-nextjs",
-  },
-]
-
 export default function HomePage() {
   return (
     <div className="pt-20">
@@ -230,60 +193,7 @@ export default function HomePage() {
       {/* Featured Projects Section */}
       <FeaturedProjectsSection />
 
-      {/* Workshops Section */}
-      <section className="container-custom section-spacing">
-        <div className="flex flex-col md:flex-row justify-between items-baseline mb-16">
-          <h2 className="heading-lg relative">
-            Workshops
-            <span className="absolute -z-10 text-[10rem] font-bold text-muted/20 -top-20 -left-6 opacity-80">03</span>
-          </h2>
-          <Link href="/workshops" className="link-underline text-lg text-muted-foreground mt-4 md:mt-0">
-            View All Workshops
-          </Link>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {workshops.map((workshop) => (
-            <Card key={workshop.id} className="group overflow-hidden border border-border bg-card">
-              <div className="aspect-video overflow-hidden">
-                <Image
-                  src={workshop.image || "/placeholder.svg"}
-                  alt={workshop.title}
-                  width={500}
-                  height={300}
-                  className="w-full h-full object-cover transition-transform group-hover:scale-105 duration-500"
-                />
-              </div>
-              <CardHeader className="p-6">
-                <div className="flex justify-between items-start mb-2">
-                  <Badge variant={workshop.status === "Upcoming" ? "default" : "secondary"}>{workshop.status}</Badge>
-                </div>
-                <CardTitle className="text-2xl group-hover:text-primary transition-colors">{workshop.title}</CardTitle>
-                <CardDescription className="line-clamp-2">{workshop.description}</CardDescription>
-              </CardHeader>
-              <CardContent className="p-6 pt-0 space-y-2">
-                <div className="flex items-center text-sm text-muted-foreground">
-                  <Calendar className="h-4 w-4 mr-2" />
-                  <span>{workshop.date}</span>
-                </div>
-                <div className="flex items-center text-sm text-muted-foreground">
-                  <Users className="h-4 w-4 mr-2" />
-                  <span>{workshop.location}</span>
-                </div>
-              </CardContent>
-              <CardFooter className="p-6 pt-0">
-                <Button
-                  asChild
-                  variant="outline"
-                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
-                >
-                  <Link href={`/workshops/${workshop.slug}`}>Learn More</Link>
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
-      </section>
+      
 
       {/* Skills Section */}
       <section className="container-custom section-spacing">
