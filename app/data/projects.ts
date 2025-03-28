@@ -54,7 +54,7 @@ export interface Project {
       id: 2,
       title: "Crypto Dashboard",
       description:
-        "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
+        "Analytics dashboard integrated with CoinGeckoAPI for Cryptocurrencies.",
       technologies: ["React", "Next.js", "Redis", "Upstash", "Security Headers", "API Rate Limiting", "Request Logging and Tracing"],
       image: "/images/cryptoCompressed.png",
       slug: "crypto-dashboard",
@@ -69,7 +69,7 @@ export interface Project {
     {
       id: 3,
       title: "Paragliding Weather Checker",
-      description: "A custom CMS built for a publishing company, allowing easy content creation and management.",
+      description: "A fully deployed website for checking Paragliding weather conditions",
       technologies: ["Next.js", "GraphQL", "PostgreSQL"],
       image: "/images/WeatherChecker.png",
       slug: "paragliding-weather-checker",

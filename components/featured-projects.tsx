@@ -33,6 +33,13 @@ export function FeaturedProjectsSection() {
                 <p className="text-xl text-muted-foreground mb-8">
                   {project.description}
                 </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                    {project.technologies.map((tech) => (
+                      <span key={tech} className="px-3 py-1 bg-muted text-muted-foreground rounded-full text-sm">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 <Button
                   asChild
                   variant="outline"

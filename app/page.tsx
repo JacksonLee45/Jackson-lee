@@ -220,30 +220,28 @@ export default function HomePage() {
       <section id="contact" className="container-custom section-spacing">
         <h2 className="heading-lg mb-16 relative text-center">
           Get In Touch
-          <span className="absolute -z-10 text-[10rem] font-bold text-muted/20 -top-20 left-1/2 -translate-x-1/2 opacity-80">
+          <span className="absolute -z-10 text-[10rem] font-bold text-muted/90 -top-20 left-1/2 -translate-x-1/2 opacity-80">
             06
           </span>
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-16">
-          <div>
-            <p className="text-2xl leading-relaxed mb-10">
-              I'm always open to new opportunities and collaborations. Feel free to reach out!
-            </p>
-            <div className="flex flex-col gap-6">
-              <a href="#" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
-                <Mail className="h-6 w-6 group-hover:scale-110 transition-transform" />
-                <span className="link-underline">Jacksonhlee1@gmail.com</span>
-              </a>
-              <a href="https://www.linkedin.com/in/jackson-leeee" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
-                <Linkedin className="h-6 w-6 group-hover:scale-110 transition-transform" />
-                <span className="link-underline">linkedin.com/in/Jackson-Leeee</span>
-              </a>
-              <a href="https://github.com/JacksonLee45" target="_blank" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
-                <Github className="h-6 w-6 group-hover:scale-110 transition-transform" />
-                <span className="link-underline">github.com/JacksonLee45</span>
-              </a>
-            </div>
+        <div className="max-w-2xl mx-auto text-center">
+          <p className="text-2xl leading-relaxed mb-10">
+            I'm always open to new opportunities and collaborations. Feel free to reach out!
+          </p>
+          <div className="flex flex-col gap-6 items-center">
+            <a href="#" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
+              <Mail className="h-6 w-6 group-hover:scale-110 transition-transform" />
+              <span className="link-underline">Jacksonhlee1@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/jackson-leeee" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
+              <Linkedin className="h-6 w-6 group-hover:scale-110 transition-transform" />
+              <span className="link-underline">linkedin.com/in/Jackson-Leeee</span>
+            </a>
+            <a href="https://github.com/JacksonLee45" target="_blank" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
+              <Github className="h-6 w-6 group-hover:scale-110 transition-transform" />
+              <span className="link-underline">github.com/JacksonLee45</span>
+            </a>
           </div>
         </div>
       </section>
