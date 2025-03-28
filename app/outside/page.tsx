@@ -123,7 +123,7 @@ export default function OutsidePage() {
                     
                   </div>
                   <div className={`overflow-hidden rounded-lg ${index % 2 === 1 ? "md:col-start-1" : ""}`}>
-                    <div className="aspect-video bg-muted rounded-lg overflow-hidden transition-transform group-hover:scale-105 duration-500">
+                    <div className="aspect-auto bg-muted rounded-lg overflow-hidden transition-transform group-hover:scale-105 duration-500">
                       <Image
                         src={activity.image || "/placeholder.svg"}
                         alt={activity.name}

@@ -230,11 +230,11 @@ export default function HomePage() {
             I'm always open to new opportunities and collaborations. Feel free to reach out!
           </p>
           <div className="flex flex-col gap-6 items-center">
-            <a href="#" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
+            <a href="#contact" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
               <Mail className="h-6 w-6 group-hover:scale-110 transition-transform" />
               <span className="link-underline">Jacksonhlee1@gmail.com</span>
             </a>
-            <a href="https://www.linkedin.com/in/jackson-leeee" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
+            <a href="https://www.linkedin.com/in/jackson-leeee" target="_blank" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
               <Linkedin className="h-6 w-6 group-hover:scale-110 transition-transform" />
               <span className="link-underline">linkedin.com/in/Jackson-Leeee</span>
             </a>

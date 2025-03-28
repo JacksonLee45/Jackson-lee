@@ -44,15 +44,15 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-medium mb-4">Connect</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Mail className="h-6 w-6" />
                 <span className="sr-only">Email</span>
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="https://www.linkedin.com/in/jackson-leeee" target="_blank" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Linkedin className="h-6 w-6" />
                 <span className="sr-only">LinkedIn</span>
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="https://github.com/JacksonLee45" target="_blank" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Github className="h-6 w-6" />
                 <span className="sr-only">GitHub</span>
               </a>

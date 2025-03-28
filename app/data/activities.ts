@@ -3,10 +3,10 @@
 export interface Activity {
     id: number;
     name: string;
-    description: string;
-    image: string;
-    location: string;
-    slug: string;
+    description?: string;
+    image?: string;
+    location?: string;
+    slug?: string;
     type: "featured" | "other";
     
     // Running specific
@@ -44,29 +44,30 @@ export interface Activity {
       type: "featured",
       upcomingEvents: [
         {
-          name: "Boston Marathon",
-          date: "April 15, 2025",
-          location: "Boston, MA",
-          goal: "Sub 3:30",
+          name: "New York City Marathon",
+          date: "November 2nd, 2025",
+          location: "New York, NY",
+          goal: "Sub 3:00",
         },
         {
-          name: "Boulder Backroads Half Marathon",
-          date: "June 8, 2025",
-          location: "Boulder, CO",
-          goal: "Sub 1:45",
+          name: "Cirque Series: Killington",
+          date: "July 11th, 2025",
+          location: "Killington, VT",
+          goal: "Have Fun",
         },
         {
-          name: "Chicago Marathon",
+          name: "Kent One Mile",
           date: "October 12, 2025",
-          location: "Chicago, IL",
-          goal: "Sub 3:25",
+          location: "Brooklyn, NY",
+          goal: "Sub 0:05",
         }
       ],
       personalBests: {
-        "5K": "19:45",
-        "10K": "41:30",
-        "Half Marathon": "1:38:22",
-        Marathon: "3:42:15"
+        "5K": "18:22",
+        "10K": "40:26",
+        "Half Marathon": "1:29:52",
+        "50k": "6:11:37",
+        Marathon: "4:13:10"
       }
     },
     {
@@ -78,7 +79,7 @@ export interface Activity {
       location: "Boulder, Colorado",
       slug: "paragliding",
       type: "featured",
-      certifications: ["P2 Novice Rating", "P3 Intermediate Rating"]
+      certifications: ["P2 Novice Rating", "High Altitude"]
     },
     {
       id: 3,
@@ -91,8 +92,8 @@ export interface Activity {
       type: "featured",
       favoriteResorts: [
         "Arapahoe Basin, CO",
-        "Copper Mountain, CO",
-        "Jackson Hole, WY"
+        "Vail, CO",
+        "Aspen Highlands, CO"
       ]
     }
   ];
@@ -101,42 +102,22 @@ export interface Activity {
   export const otherActivities: Activity[] = [
     {
       id: 4,
-      name: "Rollerblading",
-      description:
-        "Urban exploration and fitness combined. I picked up rollerblading during the pandemic as a way to experience my city differently and now it's a weekly ritual.",
-      image: "/placeholder.svg?height=300&width=400",
-      location: "Urban Trails",
-      slug: "rollerblading",
+      name: "Hockey",
       type: "other"
     },
     {
       id: 5,
-      name: "Hockey",
-      description:
-        "Team sports provide a different kind of mental refresh than solo activities. Weekly pickup games keep me connected to my community and provide a competitive outlet.",
-      image: "/placeholder.svg?height=300&width=400",
-      location: "Local Ice Rinks",
-      slug: "hockey",
+      name: "Weight Lifting",
       type: "other"
     },
     {
       id: 6,
-      name: "Hiking",
-      description:
-        "The accessible counterpart to my more extreme outdoor pursuits. Hiking allows me to introduce friends and family to the natural world I love without the technical barriers.",
-      image: "/placeholder.svg?height=300&width=400",
-      location: "Front Range, Colorado",
-      slug: "hiking",
+      name: "Rollerblading",
       type: "other"
     },
     {
       id: 7,
       name: "Rock Climbing",
-      description:
-        "A newer pursuit that combines problem-solving, physical challenge, and overcoming mental barriers. The climbing community's supportive nature reminds me of the best aspects of tech communities.",
-      image: "/placeholder.svg?height=300&width=400",
-      location: "Indoor Gyms & Outdoor Crags",
-      slug: "rock-climbing",
       type: "other"
     }
   ];
