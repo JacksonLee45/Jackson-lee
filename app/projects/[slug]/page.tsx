@@ -122,18 +122,18 @@ export default async function ProjectPage({ params }: { params: { slug: string }
         </div>
 
         {/* Technical Implementation Details */}
-        {project.technicalDetails && (
+        {project.technicalDetails && project.technicalDetails.sections.length > 0 && (
           <div className="mb-16">
             <h2 className="text-2xl font-bold mb-6">Technical Implementation</h2>
             
             <div className="grid md:grid-cols-2 gap-10">
-              {project.technicalDetails.infrastructure && (
-                <div className="space-y-6">
+              {project.technicalDetails.sections.map((section, sectionIndex) => (
+                <div key={sectionIndex} className="space-y-6">
                   <div>
-                    <h3 className="text-xl font-bold mb-3">Advanced API Infrastructure</h3>
+                    <h3 className="text-xl font-bold mb-3">{section.title}</h3>
                     <ul className="space-y-2 text-muted-foreground">
-                      {project.technicalDetails.infrastructure.map((item, index) => (
-                        <li key={index} className="flex items-start">
+                      {section.items.map((item, itemIndex) => (
+                        <li key={itemIndex} className="flex items-start">
                           <span className="text-primary mr-2">•</span>
                           <span>{item}</span>
                         </li>
@@ -141,55 +141,7 @@ export default async function ProjectPage({ params }: { params: { slug: string }
                     </ul>
                   </div>
                 </div>
-              )}
-              
-              {project.technicalDetails.caching && (
-                <div className="space-y-6">
-                  <div>
-                    <h3 className="text-xl font-bold mb-3">Caching Strategy</h3>
-                    <ul className="space-y-2 text-muted-foreground">
-                      {project.technicalDetails.caching.map((item, index) => (
-                        <li key={index} className="flex items-start">
-                          <span className="text-primary mr-2">•</span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              )}
-              
-              {project.technicalDetails.frontend && (
-                <div className="space-y-6">
-                  <div>
-                    <h3 className="text-xl font-bold mb-3">Frontend Architecture</h3>
-                    <ul className="space-y-2 text-muted-foreground">
-                      {project.technicalDetails.frontend.map((item, index) => (
-                        <li key={index} className="flex items-start">
-                          <span className="text-primary mr-2">•</span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              )}
-              
-              {project.technicalDetails.performance && (
-                <div className="space-y-6">
-                  <div>
-                    <h3 className="text-xl font-bold mb-3">Performance Optimizations</h3>
-                    <ul className="space-y-2 text-muted-foreground">
-                      {project.technicalDetails.performance.map((item, index) => (
-                        <li key={index} className="flex items-start">
-                          <span className="text-primary mr-2">•</span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              )}
+              ))}
             </div>
           </div>
         )}
