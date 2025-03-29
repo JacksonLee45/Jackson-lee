@@ -1,27 +1,40 @@
 // data/projects.ts
 
 export interface Project {
-    id: number;
+  id: number;
+  title: string;
+  description: string;
+  technologies: string[];
+  image: string;
+  slug: string;
+  type: "hosted" | "github";
+  githubUrl?: string;
+  liveUrl?: string;
+  client?: string;
+  challenge?: string;
+  solution?: string;
+  gallery?: string[];
+  year?: string;
+  role?: string;
+  
+  // New fields to support enhanced project pages
+  technicalDetails?: {
+    infrastructure?: string[];
+    frontend?: string[];
+    caching?: string[];
+    performance?: string[];
+  };
+  keyFeatures?: {
     title: string;
     description: string;
-    technologies: string[];
-    image: string;
-    slug: string;
-    type: "hosted" | "github";
-    githubUrl?: string;
-    liveUrl?: string;
-    client?: string;
-    challenge?: string;
-    solution?: string;
-    gallery?: string[];
-    year?: string;
-    role?: string;
-    nextProject?: {
-      title?: string;
-      slug?: string;
-    }
+  }[];
+  lessonsLearned?: string[];
   
+  nextProject?: {
+    title?: string;
+    slug?: string;
   }
+}
   
   // Featured projects are the ones displayed on the homepage
   export const featuredProjects: Project[] = [
@@ -54,17 +67,71 @@ export interface Project {
       id: 2,
       title: "Crypto Dashboard",
       description:
-        "Analytics dashboard integrated with CoinGeckoAPI for cryptocurrencies.",
-      technologies: ["Typescript", "Next.js", "Redis", "Upstash", "Security Headers", "API Rate Limiting", "Request Logging and Tracing"],
+        "A comprehensive cryptocurrency dashboard featuring real-time market data, interactive visualizations, and a robust API layer with advanced caching strategies.",
+      technologies: ["React", "Next.js", "TypeScript", "Redis", "Upstash", "Tailwind CSS", "Recharts"],
       image: "/images/cryptoCompressed.png",
       slug: "crypto-dashboard",
       type: "hosted",
+      year: "2023",
+      role: "Full Stack Developer",
+      challenge: "Building a high-performance cryptocurrency dashboard that could handle frequent API calls while providing a responsive user experience presented multiple challenges. The primary concerns were efficient data fetching, caching strategies to avoid rate limits, and creating an architecture that would scale with additional features.",
+      solution: "I implemented a multi-layered API architecture with Redis-powered caching and comprehensive middleware to optimize performance. This approach focused on both developer experience and end-user satisfaction through intelligent caching, detailed request tracing, and robust error handling.",
       gallery: [
-        "/placeholder.svg?height=600&width=800",
+        "/images/cryptoCompressed.png",
         "/placeholder.svg?height=600&width=800"
       ],
       liveUrl: "https://crypto-dashboard-eta-woad.vercel.app",
       githubUrl: "https://github.com/JacksonLee45/crypto-dashboard-1",
+      technicalDetails: {
+        infrastructure: [
+          "Implemented TTL-based cache invalidation with Redis",
+          "Created IP-based rate limiting to prevent API abuse",
+          "Built request tracing with unique IDs for debugging",
+          "Set up comprehensive security headers (CSP, HSTS)"
+        ],
+        frontend: [
+          "React 19 with TypeScript for type safety",
+          "React Query for data fetching and state management",
+          "Interactive charts powered by Recharts",
+          "Responsive design optimized for all device sizes"
+        ],
+        caching: [
+          "Short-lived cache (60s) for volatile data like current prices",
+          "Medium-lived cache (5min) for market overviews",
+          "Long-lived cache (30min) for historical data",
+          "Multi-tiered caching (Redis + React Query) to minimize API calls"
+        ],
+        performance: [
+          "Server-side rendering for initial page load performance",
+          "Incremental Static Regeneration for static content",
+          "Optimized image loading with Next.js Image component",
+          "Efficient re-renders with React optimization techniques"
+        ]
+      },
+      keyFeatures: [
+        {
+          title: "Real-time Market Data",
+          description: "Comprehensive cryptocurrency market data with current prices, market caps, and trading volumes"
+        },
+        {
+          title: "Interactive Visualizations",
+          description: "Dynamic and responsive charts for price history, market dominance, and trading patterns"
+        },
+        {
+          title: "Robust API Layer",
+          description: "Advanced caching, rate limiting, and security features powering all data operations"
+        }
+      ],
+      lessonsLearned: [
+        "The critical importance of multi-layered caching strategies for both performance and reliability",
+        "How to implement effective request tracing for debugging distributed systems",
+        "Techniques for balancing fresh data requirements with API rate limits",
+        "The value of structured error handling in improving developer experience"
+      ],
+      nextProject: {
+        title: "Paragliding Weather Checker",
+        slug: "paragliding-weather-checker"
+      }
     },
     {
       id: 3,
