@@ -63,22 +63,23 @@ export default function HomePage() {
           </div>
           <div className="md:col-span-2">
             <p className="body-lg mb-6">
-            As a software engineer with over three years of experience crafting enterprise SaaS applications, I blend technical 
-            expertise with business acumen. Since earning my Computer Science degree from the University of Colorado Boulder,
+            As a software engineer with over three years of experience crafting enterprise SaaS applications, I blend technical expertise
+            with business acumen. Since earning my Computer Science degree with a minor in Business from the University of Colorado Boulder,
             I've specialized in building full-stack web solutions at Cognizant using C#, .NET, SQL, and JavaScript.
             </p>
             <p className="body-lg mb-6">
-            My professional strength lies in translating complex technical concepts into business value *TODO: Revise Sentence, business first tech second*. 
-            I thrive when leading client conversations about system enhancements, feature development, 
-            and technical challenges. By successfully managing multiple software deployments, I've 
-            demonstrated my ability to deliver solutions that address immediate needs while 
-            establishing foundations for future growth.
+            My professional strength lies in understanding business needs first, then crafting technical solutions to address them. 
+            I thrive when leading client conversations about system enhancements, feature development, and technical challenges. 
+            By successfully managing multiple software deployments, I've demonstrated my ability to deliver solutions that address
+            immediate needs while establishing foundations for future growth.
             </p>
             <p className="body-lg mb-10">
-            Beyond the digital realm, I seek balance through marathons, alpine skiing, and paragliding 
-            adventures. These pursuits embody my philosophy of 'structured work, liberated play' that defines
-             my approach to both code and life. This duality enables me to transform workplace complexity 
-             into elegant solutions while embracing calculated challenges in nature.
+            Away from the keyboard, I find energy and balance in outdoor pursuits. Marathon running became an
+            unexpected passion that pushes my endurance and grit with each race. 
+            Alpine skiing has been a lifelong adventure from the icy slopes of Vermont to the powder of
+            the Rockies. And after discovering paragliding, I dedicated myself to the sport, spending months learning to 
+            fly and never looking back. These activities provide the perfect counterbalance to my 
+            technical work, offering both challenge and thrill in the natural world.
             </p>
           </div>
         </div>
