@@ -208,15 +208,86 @@ export interface Project {
     {
       id: 3,
       title: "Paragliding Weather Checker",
-      description: "A fully deployed website for checking paragliding weather conditions.",
-      technologies: ["React", "Javascript", "PostgreSQL", "AWS Lamdba", "AWS API Gateway"],
+      description: "A serverless web application leveraging AWS infrastructure to deliver real-time weather data for paragliders assessing flight conditions at specific geographic coordinates.",
+      technologies: ["React", "JavaScript", "AWS Lambda", "AWS API Gateway", "Tailwind CSS", "OpenWeather API", "Google Maps API"],
       image: "/images/WeatherChecker.png",
       slug: "paragliding-weather-checker",
       type: "hosted",
+      client: "Personal Project",
+      year: "2024",
+      role: "Full Stack Developer",
+      challenge: "Designing a reliable, cost-efficient system to deliver critical weather data for paragliders without maintaining server infrastructure. The application needed to handle coordinate-based lookups while abstracting API complexity and providing intuitive visualization of weather conditions relevant to flight safety.",
+      solution: "Implemented a serverless architecture using AWS Lambda and API Gateway to create a secure, scalable backend that handles authentication and external API integrations. This approach eliminated server maintenance concerns while providing millisecond response times for weather queries at virtually no cost during normal usage patterns.",
       gallery: [
-        "/placeholder.svg?height=600&width=800",
+        "/images/WeatherChecker.png",
         "/placeholder.svg?height=600&width=800"
       ],
+      liveUrl: "https://paragliding-weather.vercel.app/",
+      githubUrl: "https://github.com/JacksonLee45/paragliding-weather-checker",
+      technicalDetails: {
+        sections: [
+          {
+            title: "AWS Infrastructure",
+            items: [
+              "Configured AWS Lambda function with Node.js runtime for OpenWeather API integration",
+              "Implemented API Gateway with custom domain and CORS policies",
+              "Set up least-privilege IAM roles following security best practices",
+              "Created CloudWatch alarms for monitoring API usage and potential cost spikes"
+            ]
+          },
+          {
+            title: "Frontend Architecture",
+            items: [
+              "Built with React and JavaScript for dynamic UI rendering",
+              "Implemented responsive design with Tailwind CSS and Bootstrap components",
+              "Optimized component structure to minimize re-renders during state updates",
+              "Created custom hooks for location data management and API interactions"
+            ]
+          },
+          {
+            title: "API Integration",
+            items: [
+              "Designed Lambda function to proxy and transform OpenWeather API responses",
+              "Implemented request validation to prevent malformed coordinate submissions",
+              "Created middleware for request authentication and rate limiting",
+              "Built response caching layer to reduce redundant API calls"
+            ]
+          },
+          {
+            title: "Deployment Strategy",
+            items: [
+              "Automated Lambda deployment with AWS SAM templates",
+              "Implemented CI/CD pipeline for frontend using GitHub Actions",
+              "Configured environment-specific builds for development and production",
+              "Set up API Gateway staging for backend version control"
+            ]
+          }
+        ]
+      },
+      keyFeatures: [
+        {
+          title: "Serverless Architecture",
+          description: "Fully serverless design using AWS Lambda and API Gateway, enabling auto-scaling with zero infrastructure management"
+        },
+        {
+          title: "Coordinate-Based Weather",
+          description: "Precise weather lookups using geographic coordinates essential for accurate paragliding flight planning"
+        },
+        {
+          title: "Real-Time Flight Conditions",
+          description: "Integration with OpenWeather API to provide current temperature, wind speed, direction, and atmospheric conditions"
+        }
+      ],
+      lessonsLearned: [
+        "Serverless architectures significantly reduce operational complexity while providing excellent scalability for variable workloads",
+        "API Gateway configuration is critical for security and can be complex to set up correctly with proper CORS and authentication",
+        "Creating a separation between data fetching and UI concerns leads to more maintainable frontend code",
+        "Lambda cold starts can impact user experience and should be addressed with proper warming strategies for production applications"
+      ],
+      nextProject: {
+        title: "Emergency Room Scheduler",
+        slug: "er-scheduler"
+      }
     },
   ];
   
@@ -224,18 +295,96 @@ export interface Project {
   export const allProjects: Project[] = [
     ...featuredProjects,
     {
-        id: 4,
-        title: "Emergency Room Scheduler",
-        description: "A custom scheduler that automatically triages patients as they enter an Emergency Room.",
-        technologies: ["C#", "ASP .NET", "MSSQL Server"],
-        image: "/placeholder.svg?height=600&width=800",
-        slug: "er-scheduler",
-        type: "hosted",
-        gallery: [
-          "/placeholder.svg?height=600&width=800",
-          "/placeholder.svg?height=600&width=800"
-        ],
-    },
+      id: 4,
+      title: "EasyER: Emergency Room Scheduler",
+      description: "A full-stack web application that streamlines patient management in emergency departments through automated triage and role-based interfaces for medical staff.",
+      technologies: ["ASP.NET Core 6.0", "Blazor WebAssembly", "Entity Framework Core", "SQL Server", "Azure", "JWT Authentication"],
+      image: "/placeholder.svg?height=600&width=800",
+      slug: "er-scheduler",
+      type: "hosted",
+      client: "Personal Project",
+      year: "2022",
+      role: "Full Stack Developer",
+      challenge: "The primary challenge was learning C# and developing my first full-stack application using the .NET ecosystem. Having previously worked primarily with JavaScript frameworks, this project represented a significant shift in technology stack and development paradigm. I needed to rapidly gain proficiency in C#, ASP.NET Core, Blazor WebAssembly, and Entity Framework while simultaneously designing and implementing a complex system with multiple user roles and workflows.",
+      solution: "I developed EasyER, a lightweight but robust patient management system using ASP.NET Core 6.0 and Blazor WebAssembly. The application features automated patient triage based on trauma levels and wait times, real-time patient queues, and role-based interfaces for nurses, doctors, and administrators. The system follows a clean architecture with separate contexts for different domains, making it maintainable and extensible.",
+      gallery: [
+        "/placeholder.svg?height=600&width=800",
+        "/placeholder.svg?height=600&width=800"
+      ],
+      githubUrl: "https://github.com/JacksonLee45/EasyER",
+      technicalDetails: {
+        sections: [
+          {
+            title: "Architecture",
+            items: [
+              "Modern client-server architecture with Blazor WebAssembly SPA and ASP.NET Core 6.0 backend",
+              "Repository pattern to separate data access logic from controllers",
+              "Entity Framework Core with code-first migrations",
+              "JWT-based authentication with ASP.NET Identity",
+              "Role-based authorization controlling access to features"
+            ]
+          },
+          {
+            title: "Frontend Implementation",
+            items: [
+              "Responsive UI built with Blazor WebAssembly and Bootstrap",
+              "Role-specific components and layouts",
+              "Real-time patient queue with automatic updates",
+              "Form validation with data annotations",
+              "Custom authentication state provider"
+            ]
+          },
+          {
+            title: "Backend Implementation",
+            items: [
+              "RESTful API endpoints for CRUD operations",
+              "Custom middleware for exception handling and logging",
+              "Dependency injection for loosely coupled components",
+              "Unit tests with NUnit and Moq",
+              "Azure Web App deployment with CI/CD pipeline"
+            ]
+          },
+          {
+            title: "Database Design",
+            items: [
+              "Code-first migrations with Entity Framework Core to evolve the database schema",
+              "SQL Server with separate contexts for patients, doctors, and nurses",
+              "Entity relationships modeling hospital workflows",
+              "Optimized queries for high-traffic operations",
+              "Data seeding for development and testing"
+            ]
+          }
+        ]
+      },
+      keyFeatures: [
+        {
+          title: "Automated Patient Triage",
+          description: "Algorithmic prioritization of patients based on trauma level and wait time, ensuring the most urgent cases are treated first"
+        },
+        {
+          title: "Role-Based Access Control",
+          description: "Tailored interfaces for nurses (patient intake), doctors (treatment), and administrators (system management)"
+        },
+        {
+          title: "Real-Time Patient Queue",
+          description: "Dynamic display of patients sorted by urgency with color-coded indicators for quick visual assessment"
+        },
+        {
+          title: "Doctor-Patient Assignment",
+          description: "Tracking system for doctor-patient relationships, balancing workloads and ensuring accountability"
+        }
+      ],
+      lessonsLearned: [
+        "Blazor WebAssembly provides a compelling alternative to JavaScript frameworks for .NET developers, enabling code sharing between client and server",
+        "Entity Framework Core's migrations are powerful but require careful planning to avoid performance issues in production",
+        "Role-based authorization is most effective when designed around specific user workflows rather than abstract permissions",
+        "Repository pattern significantly improves testability but introduces overhead that should be justified by project complexity"
+      ],
+      nextProject: {
+        title: "Portfolio Website",
+        slug: "portfolio"
+      }
+  },
     {
       id: 5,
       title: "Portfolio Website",
