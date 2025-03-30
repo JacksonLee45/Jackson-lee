@@ -76,60 +76,6 @@ export default function ProjectsPage() {
           </div>
         </div>
 
-        {/* GitHub-only Projects */}
-        <div>
-          <h2 className="heading-lg mb-10 relative">
-            Deep CS Projects
-            <span className="absolute -z-10 text-[8rem] font-bold text-muted/20 -top-16 -left-6 opacity-80">02</span>
-          </h2>
-
-          <p className="text-xl text-muted-foreground mb-10 max-w-3xl">
-            These projects focus on computer science fundamentals and systems programming. They're available on GitHub
-            for code review and educational purposes.
-          </p>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {githubProjects.map((project) => (
-              <div
-                key={project.id}
-                className="group bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
-              >
-                <div className="aspect-video bg-muted overflow-hidden">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">
-                    {project.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-6">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.technologies.map((tech) => (
-                      <span key={tech} className="px-3 py-1 bg-muted text-muted-foreground rounded-full text-sm">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="w-full gap-2 group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
-                  >
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <Github className="h-4 w-4" />
-                      <span>View on GitHub</span>
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
     </div>
   )

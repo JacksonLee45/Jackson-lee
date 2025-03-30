@@ -42,7 +42,7 @@ export interface Project {
       id: 1,
       title: "Stride Sync",
       description:
-        "A comprehensive workout tracking platform with an AI coach designed to help runners plan, track, and analyze their training with personalized plans and detailed analytics.",
+        "A workout tracking platform with an AI coach designed to help runners plan, track, and analyze their training with personalized plans and detailed analytics.",
       technologies: ["Next.js", "React", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS", "Anthropic API", "Recharts", "Vercel",  "User Authorization", "REST APIs"],
       image: "/images/StrideSyncDark.png",
       slug: "stride-sync",
@@ -224,7 +224,7 @@ export interface Project {
         "/images/WeatherChecker.png",
         "/placeholder.svg?height=600&width=800"
       ],
-      liveUrl: "https://paragliding-weather.vercel.app/",
+      liveUrl: "https://paragliding-weather-checker.vercel.app/",
       githubUrl: "https://github.com/JacksonLee45/paragliding-weather-checker",
       technicalDetails: {
         sections: [
