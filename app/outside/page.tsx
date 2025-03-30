@@ -14,7 +14,7 @@ export default function OutsidePage() {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="heading-xl mb-6">Outside</h1>
           <p className="body-lg text-muted-foreground">
-            Life beyond the screen. A glimpse into the activities that fuel my creativity and problem-solving abilities.
+            Life Beyond the Screen
           </p>
         </div>
 

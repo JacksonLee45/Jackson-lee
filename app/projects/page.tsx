@@ -17,7 +17,7 @@ export default function ProjectsPage() {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="heading-xl mb-6">Projects</h1>
           <p className="body-lg text-muted-foreground">
-            A showcase of my work, featuring web applications, design projects, and experiments.
+            A showcase of my personal work
           </p>
         </div>
 
