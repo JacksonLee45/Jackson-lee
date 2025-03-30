@@ -43,15 +43,15 @@ export interface Project {
       title: "Stride Sync",
       description:
         "A comprehensive workout tracking platform with an AI coach designed to help runners plan, track, and analyze their training with personalized plans and detailed analytics.",
-      technologies: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS", "Anthropic API", "Recharts"],
+      technologies: ["Next.js", "React", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS", "Anthropic API", "Recharts", "Vercel",  "User Authorization", "REST APIs"],
       image: "/images/StrideSyncDark.png",
       slug: "stride-sync",
       type: "hosted",
       client: "Personal Project",
       year: "2025",
       role: "Full Stack Developer",
-      challenge: "Creating a seamless integration between a modern web application and AI capabilities to deliver personalized training plans. The system needed to handle complex workout data modeling while providing an intuitive interface for users to interact with the AI coach.",
-      solution: "Implemented a sophisticated architecture combining Next.js 13+ App Router with Supabase for authentication and database services. Designed a specialized AI coaching system using Claude that generates structured workout plans as JSON while maintaining a natural conversation interface for users.",  
+      challenge: "As I prepared for the New York City Marathon, I discovered that existing running apps lacked flexibility for customizing marathon training plans to fit individual schedules and preferences. Most apps offered rigid, pre-made plans with little room for personalization. Additionally, I wanted to challenge myself technically by integrating AI capabilities to create an intelligent training assistant that could generate personalized plans based on a runner's specific needs.",
+      solution: "I built StrideSync as both a practical solution for my marathon training and a technical showcase. The application combines a flexible workout calendar with a Claude-powered AI coach that generates customized training plans as structured data. The system translates natural language conversations about fitness goals into actionable workout schedules, offering the personalization missing from commercial running apps while demonstrating advanced integration between modern web technologies and AI capabilities.",  
       gallery: [
         "/images/StrideSyncLight.png",
         "/placeholder.svg?height=600&width=800"
@@ -61,37 +61,39 @@ export interface Project {
       technicalDetails: {
         sections: [
           {
-            title: "[better title needed]",
+            title: "Backend Infrastructure",
             items: [
-            "Supabase for authentication, database, and row-level security policies",
-            "Next.js App Router with server components, client components, and API routes",
-            "Cookie-based authentication with SSR support",
-            "Vercel deployment with environment variable management"
+              "Supabase for authentication, database, and row-level security policies",
+              "Next.js App Router with server components, client components, and API routes",
+              "Cookie-based authentication with SSR support",
+              "PostgreSQL database with specialized workout subtypes"
             ]
           },
           {
-            title: "[better title needed]",
+            title: "Frontend Framework",
             items: [
-            "React 19 with functional components and hooks",
-            "TypeScript for type safety and enhanced developer experience",
-            "shadcn/ui for accessible and customizable UI components",
-            "Responsive design with light/dark theme support"
+              "React 19 with functional components and hooks",
+              "TypeScript for type safety and enhanced developer experience",
+              "shadcn/ui and Tailwind CSS for accessible, customizable components",
+              "Responsive design with light/dark theme support"
             ]
           },
           {
-            title: "[better title needed]",
+            title: "Performance Optimizations",
             items: [
               "Dynamic imports for improved page load performance",
               "Streaming responses for AI interactions",
-              "SSR for critical pages and CSR for interactive components"
+              "SSR for critical pages and CSR for interactive components",
+              "Vercel deployment with serverless functions"
             ]
           },
           {
-            title: "[better title needed]",
+            title: "AI & Data Security",
             items: [
-              "Custom data models for efficient workout tracking",
-              "Structured AI responses parsed as JSON",
-              "Row-level security ensuring data privacy"
+              "Anthropic Claude API integration with structured JSON outputs",
+              "Custom prompting system for workout plan generation",
+              "Row-level security policies ensuring user data privacy",
+              "Flexible data modeling supporting various workout types"
             ]
           },
         ]
@@ -126,7 +128,7 @@ export interface Project {
       title: "Crypto Dashboard",
       description:
         "A comprehensive cryptocurrency dashboard featuring real-time market data, interactive visualizations, and a robust API layer with advanced caching strategies.",
-      technologies: ["React", "Next.js", "TypeScript", "Redis", "Upstash", "Tailwind CSS", "Recharts"],
+      technologies: ["React", "Next.js", "TypeScript", "Redis Caching", "Upstash", "Tailwind CSS", "Recharts", "Axios", "API Rate Limiting", "Request Tracing", "Multi-tiered caching strategy", "Coin Gecko API integration"],
       image: "/images/cryptoCompressed.png",
       slug: "crypto-dashboard",
       type: "hosted",
