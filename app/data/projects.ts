@@ -300,7 +300,7 @@ export interface Project {
       id: 4,
       title: "EasyER: Emergency Room Scheduler",
       description: "A full-stack web application that streamlines patient management in emergency departments through automated triage and role-based interfaces for medical staff.",
-      technologies: ["ASP.NET Core 6.0", "Blazor WebAssembly", "Entity Framework Core", "SQL Server", "Azure", "JWT Authentication"],
+      technologies: ["C#", "SQL Server", "ASP.NET Core 6.0", "Blazor WebAssembly", "Entity Framework Core", "Azure", "JWT Authentication"],
       image: "/placeholder.svg?height=600&width=800",
       slug: "er-scheduler",
       type: "hosted",

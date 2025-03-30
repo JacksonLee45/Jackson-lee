@@ -64,10 +64,10 @@ export interface Activity {
       ],
       personalBests: {
         "5K": "18:22",
-        "10K": "40:26",
         "Half Marathon": "1:29:52",
-        "50k": "6:11:37",
-        Marathon: "4:13:10"
+        "10K": "40:26",
+        "Marathon": "4:13:10",
+        "50K": "6:11:37"
       }
     },
     {
