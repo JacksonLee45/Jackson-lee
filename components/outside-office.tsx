@@ -3,35 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { featuredActivities } from "../app/data/activities";
 
 export function OutsideOfficeSection() {
-  const activities = [
-    {
-      id: 1,
-      name: "Running",
-      description: "Marathon enthusiast with a passion for long-distance running. I've completed several marathons across the country, finding that the discipline and endurance required transfers directly to solving complex technical challenges.",
-      image: "/images/stravaMap.jpg",
-      location: "Pavement, Dirt, and Gravel",
-      slug: "running"
-    },
-    {
-      id: 2,
-      name: "Paragliding",
-      description: "When I'm not debugging code, you might find me soaring through the skies. Paragliding taught me to make calculated decisions while embracing uncertainty – skills that prove invaluable when navigating new technologies.",
-      image: "/images/paragliding.jpg",
-      location: "Boulder, Colorado",
-      slug: "paragliding"
-    },
-    {
-      id: 3,
-      name: "Skiing",
-      description: "Alpine skiing is my winter passion. Carving through challenging terrain mirrors how I tackle complex projects – with precision, adaptability, and a willingness to adjust course as conditions change.",
-      image: "/images/skiing.jpg",
-      location: "Rocky Mountains",
-      slug: "skiing"
-    }
-  ];
 
   return (
     <section className="container-custom section-spacing">
@@ -46,7 +20,7 @@ export function OutsideOfficeSection() {
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {activities.map((activity) => (
+        {featuredActivities.map((activity) => (
           <Card key={activity.id} className="group overflow-hidden border border-border bg-card">
             <div className="aspect-[4/3] overflow-hidden">
               <Image

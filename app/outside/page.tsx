@@ -1,8 +1,5 @@
 // app/outside/page.tsx
-
-import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { MapPin, Calendar } from "lucide-react";
 
 import { featuredActivities, otherActivities } from "../data/activities";
