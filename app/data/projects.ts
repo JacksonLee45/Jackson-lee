@@ -401,7 +401,7 @@ export interface Project {
       title: "Portfolio Website",
       description: "A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS designed to showcase my professional experience, projects, and outside interests in a clean, accessible interface.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Vercel", "Responsive Design"],
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/images/portfolio/portfolio-home.png",
       slug: "portfolio",
       type: "hosted",
       client: "Personal Project",
@@ -410,10 +410,9 @@ export interface Project {
       challenge: "Creating a portfolio that effectively communicates both technical skills and personality is challenging. The site needed to be performant, accessible, and visually appealing while showcasing projects with appropriate technical depth. Additionally, I wanted to implement a component system that would enable easy maintenance and future enhancements without sacrificing design quality.",
       solution: "I built a modern, responsive portfolio using Next.js App Router and TypeScript, prioritizing both aesthetics and technical excellence. By leveraging shadcn/ui component library with Tailwind CSS, I implemented a clean design system with light/dark mode support. The site features detailed project pages with comprehensive information about technical implementations, responsive layouts for all device sizes, and optimized performance metrics.",
       gallery: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800"
+        "/images/portfolio/portfolio-home.png"
       ],
-      githubUrl: "https://github.com/JacksonLee45/portfolio",
+      githubUrl: "https://github.com/JacksonLee45/jackson-lee",
       technicalDetails: {
         sections: [
           {
