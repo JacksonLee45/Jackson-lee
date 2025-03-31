@@ -44,7 +44,7 @@ export interface Project {
       description:
         "A workout tracking platform with an AI coach designed to help runners plan, track, and analyze their training with personalized plans and detailed analytics.",
       technologies: ["Next.js", "React", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS", "Anthropic API", "Recharts", "Vercel",  "User Authorization", "REST APIs"],
-      image: "/images/StrideSyncDark.png",
+      image: "/images/stridesync/StrideSyncDark.png",
       slug: "stride-sync",
       type: "hosted",
       client: "Personal Project",
@@ -53,8 +53,12 @@ export interface Project {
       challenge: "As I prepared for the New York City Marathon, I discovered that existing running apps lacked flexibility for customizing marathon training plans to fit individual schedules and preferences. Most apps offered rigid, pre-made plans with little room for personalization. Additionally, I wanted to challenge myself technically by integrating AI capabilities to create an intelligent training assistant that could generate personalized plans based on a runner's specific needs.",
       solution: "I built StrideSync as both a practical solution for my marathon training and a technical showcase. The application combines a flexible workout calendar with a Claude-powered AI coach that generates customized training plans as structured data. The system translates natural language conversations about fitness goals into actionable workout schedules, offering the personalization missing from commercial running apps while demonstrating advanced integration between modern web technologies and AI capabilities.",  
       gallery: [
-        "/images/StrideSyncLight.png",
-        "/placeholder.svg?height=600&width=800"
+        "/images/stridesync/StrideSyncLight.png",
+        "/images/stridesync/stridesync-coach.png",
+        "/images/stridesync/stridesync-calendar.png",
+        "/images/stridesync/stridesync-trainingplans.png",
+        "/images/stridesync/stridesync-analytics.png",
+        "/images/stridesync/StrideSyncDark.png",
       ],
       liveUrl: "https://stride-sync.vercel.app/",
       githubUrl: "https://github.com/JacksonLee45/stride-sync",
@@ -129,7 +133,7 @@ export interface Project {
       description:
         "A comprehensive cryptocurrency dashboard featuring real-time market data, interactive visualizations, and a robust API layer with advanced caching strategies.",
       technologies: ["React", "Next.js", "TypeScript", "Redis Caching", "Upstash", "Tailwind CSS", "Recharts", "Axios", "API Rate Limiting", "Request Tracing", "Multi-tiered caching strategy", "Coin Gecko API integration"],
-      image: "/images/cryptoCompressed.png",
+      image: "/images/crypto/cryptoCompressed.png",
       slug: "crypto-dashboard",
       type: "hosted",
       year: "2025",
@@ -137,8 +141,10 @@ export interface Project {
       challenge: "Building a high-performance cryptocurrency dashboard that could handle frequent API calls while providing a responsive user experience presented multiple challenges. The primary concerns were efficient data fetching, caching strategies to avoid rate limits, and creating an architecture that would scale with additional features.",
       solution: "I implemented a multi-layered API architecture with Redis-powered caching and comprehensive middleware to optimize performance. This approach focused on both developer experience and end-user satisfaction through intelligent caching, detailed request tracing, and robust error handling.",
       gallery: [
-        "/images/cryptoCompressed.png",
-        "/placeholder.svg?height=600&width=800"
+        "/images/crypto/cryptoCompressed.png",
+        "/images/crypto/crypto-list.png",
+        "/images/crypto/crypto-id.png",
+        "/images/crypto/crypto-about.png",
       ],
       liveUrl: "https://crypto-dashboard-eta-woad.vercel.app",
       githubUrl: "https://github.com/JacksonLee45/crypto-dashboard-1",
@@ -212,7 +218,7 @@ export interface Project {
       title: "Paragliding Weather Checker",
       description: "A serverless web application leveraging AWS infrastructure to deliver real-time weather data for paragliders assessing flight conditions at specific geographic coordinates.",
       technologies: ["React", "JavaScript", "AWS Lambda", "AWS API Gateway", "Tailwind CSS", "OpenWeather API", "Google Maps API"],
-      image: "/images/WeatherChecker.png",
+      image: "/images/paragliding/WeatherChecker.png",
       slug: "paragliding-weather-checker",
       type: "hosted",
       client: "Personal Project",
@@ -221,8 +227,11 @@ export interface Project {
       challenge: "Designing a reliable, cost-efficient system to deliver critical weather data for paragliders without maintaining server infrastructure. The application needed to handle coordinate-based lookups while abstracting API complexity and providing intuitive visualization of weather conditions relevant to flight safety.",
       solution: "Implemented a serverless architecture using AWS Lambda and API Gateway to create a secure, scalable backend that handles authentication and external API integrations. This approach eliminated server maintenance concerns while providing millisecond response times for weather queries at virtually no cost during normal usage patterns.",
       gallery: [
-        "/images/WeatherChecker.png",
-        "/placeholder.svg?height=600&width=800"
+        "/images/paragliding/WeatherChecker.png",
+        "/images/paragliding/paragliding-form.png",
+        "/images/paragliding/paragliding-data.png",
+        "/images/paragliding/paragliding-wind.png",
+        "/images/paragliding/paragliding-temp.png",
       ],
       liveUrl: "https://paragliding-weather-checker.vercel.app/",
       githubUrl: "https://github.com/JacksonLee45/paragliding-weather-checker",
@@ -386,91 +395,81 @@ export interface Project {
         title: "Portfolio Website",
         slug: "portfolio"
       }
-  },
+    },
     {
       id: 5,
       title: "Portfolio Website",
-      description: "This website you're currently on!",
-      technologies: ["Next.js", "Typescript", "Tailwind CSS"],
+      description: "A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS designed to showcase my professional experience, projects, and outside interests in a clean, accessible interface.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Vercel", "Responsive Design"],
       image: "/placeholder.svg?height=600&width=800",
       slug: "portfolio",
       type: "hosted",
-      gallery: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800"
-      ],
-  },
-    {
-      id: 6,
-      title: "Algorithm Visualizer",
-      description: "TEMP A tool for visualizing common algorithms like sorting, pathfinding, and graph traversal algorithms.",
-      technologies: ["JavaScript", "Canvas API", "Data Structures"],
-      githubUrl: "https://github.com/JacksonLee45/algorithm-visualizer",
-      image: "/placeholder.svg?height=600&width=800",
-      slug: "temp1",
-      type: "github",
-      gallery: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800"
-      ],
-    },
-    {
-      id: 7,
-      title: "Compiler Design Project",
-      description: "TEMP A simple compiler implementation that demonstrates lexical analysis, parsing, and code generation.",
-      technologies: ["C++", "LLVM", "Automata Theory"],
-      githubUrl: "https://github.com/JacksonLee45/mini-compiler",
-      image: "/placeholder.svg?height=600&width=800",
-      slug: "temp2",
-      type: "github",
-      gallery: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800"
-      ],
-    },
-    {
-      id: 8,
-      title: "Operating System Kernel",
-      description:
-        "TEMP A minimal operating system kernel implementing basic process scheduling, memory management, and file systems.",
-      technologies: ["C", "Assembly", "OS Theory"],
-      githubUrl: "https://github.com/JacksonLee45/mini-os",
-      image: "/placeholder.svg?height=600&width=800",
-      slug: "temp3",
-      type: "github",
-      gallery: [
-        "/placeholder.svg?height=600&width=800",
-        "/placeholder.svg?height=600&width=800"
-      ]
-    },
-    {
-      id: 9,
-      title: "Typography Portfolio",
       client: "Personal Project",
       year: "2025",
       role: "Full Stack Developer",
-      description:
-      "A minimalist portfolio website for a typography designer, featuring a clean layout and beautiful typography.",
-      challenge:
-      "The main challenge was to create a website that showcased the designer's work while also demonstrating typography principles in action. The design needed to be minimal yet impactful, with a focus on readability and visual hierarchy.",
-      solution:
-      "I developed a custom Next.js application with a focus on typography and whitespace. The site features carefully selected font pairings, a responsive layout, and subtle animations that enhance the user experience without distracting from the content.",
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
-      image: "/placeholder.svg?height=800&width=1600",
-      slug: "typography-portfolio",
-      type: "github",
+      challenge: "Creating a portfolio that effectively communicates both technical skills and personality is challenging. The site needed to be performant, accessible, and visually appealing while showcasing projects with appropriate technical depth. Additionally, I wanted to implement a component system that would enable easy maintenance and future enhancements without sacrificing design quality.",
+      solution: "I built a modern, responsive portfolio using Next.js App Router and TypeScript, prioritizing both aesthetics and technical excellence. By leveraging shadcn/ui component library with Tailwind CSS, I implemented a clean design system with light/dark mode support. The site features detailed project pages with comprehensive information about technical implementations, responsive layouts for all device sizes, and optimized performance metrics.",
       gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+        "/placeholder.svg?height=600&width=800",
+        "/placeholder.svg?height=600&width=800"
       ],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/JacksonLee45/typography-portfolio",
-      nextProject: {
-        title: "E-commerce Platform",
-        slug: "ecommerce-platform",
+      githubUrl: "https://github.com/JacksonLee45/portfolio",
+      technicalDetails: {
+        sections: [
+          {
+            title: "Frontend Architecture",
+            items: [
+              "Next.js App Router architecture with optimized routing and page transitions",
+              "TypeScript implementation for type safety and improved developer experience",
+              "Responsive design system using Tailwind CSS with custom utility classes",
+              "Light and dark mode support with system preference detection"
+            ]
+          },
+          {
+            title: "Component Library",
+            items: [
+              "Implemented shadcn/ui components built on Radix UI primitives",
+              "Custom component creation for specialized UI elements",
+              "Accessibility-focused component design with proper ARIA attributes",
+              "Reusable layout components for consistent page structure"
+            ]
+          },
+          {
+            title: "Performance Optimizations",
+            items: [
+              "Image optimization with Next.js Image component",
+              "Static site rendering with pre-built HTML pages",
+              "Route-based code splitting with Next.js App Router",
+              "Optimized font loading with next/font integration"
+            ]
+          }
+        ]
       },
-    }
+      keyFeatures: [
+        {
+          title: "Responsive Design",
+          description: "Fully responsive layout that adapts seamlessly to all device sizes from mobile to desktop"
+        },
+        {
+          title: "Project Showcase",
+          description: "Detailed project pages highlighting technical implementations, challenges, and solutions"
+        },
+        {
+          title: "Theme Support",
+          description: "Light and dark mode with automatic system preference detection for optimal viewing experience"
+        },
+        {
+          title: "Performance Focused",
+          description: "Optimized for speed and accessibility with perfect Lighthouse scores across all metrics"
+        }
+      ],
+      lessonsLearned: [
+        "Designing with a component-first approach significantly improves consistency and development speed",
+        "Tailwind CSS utility classes enable rapid UI development without sacrificing design quality",
+        "Next.js App Router provides excellent developer experience and performance benefits",
+        "Careful planning of content structure is essential for creating a maintainable portfolio site"
+      ],
+    },
   ];
   
   // Helper function to get a project by slug
