@@ -20,7 +20,7 @@ export default function HomePage() {
               <h2 className="heading-md text-muted-foreground">Software Engineer</h2>
             </div>
             <p className="body-lg text-muted-foreground max-w-md">
-            I craft technical solutions that create real-world impact. By combining technical expertise with authentic collaboration, I build systems that matter. For me, success goes beyond code, it's about the meaningful difference my work makes for organizations and their users.
+            I craft technical solutions that create real-world impact. By combining technical expertise with authentic collaboration, I build systems that move the needle. For me, success goes beyond code, it's about the meaningful difference my work makes for organizations and their users.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="text-lg px-8">
