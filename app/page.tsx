@@ -109,7 +109,7 @@ export default function HomePage() {
                 <ul className="space-y-3 mt-4">
                   <li className="flex items-start">
                     <span className="text-primary mr-2">•</span>
-                    <span>Developed enterprise SaaS web applications using C#, .NET, ASP.NET, and JavaScript </span>
+                    <span>Developed enterprise SaaS web applications using C#, .NET, SQL, and JavaScript </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">•</span>
