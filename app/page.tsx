@@ -109,19 +109,19 @@ export default function HomePage() {
                 <ul className="space-y-3 mt-4">
                   <li className="flex items-start">
                     <span className="text-primary mr-2">•</span>
-                    <span>Developed enterprise SaaS web applications using C#, .NET, SQL, and JavaScript </span>
+                    <span>Developed enterprise SaaS web applications using C#, .NET, SQL, and JavaScript. </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">•</span>
-                    <span>Wrote SQL queries and stored procedures to extract, manipulate and manage data in SQL Server and Oracle databases </span>
+                    <span>Wrote SQL queries and stored procedures to extract, manipulate and manage data in SQL Server and Oracle databases. </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">•</span>
-                    <span> Built RESTful APIs integrating frontend and backend systems</span>
+                    <span> Built RESTful APIs integrating frontend and backend systems.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">•</span>
-                    <span> Wrote Javascript to employ jQuery and AJAX techniques to enable asynchronous data retrieval reducing loading times </span>
+                    <span> Wrote Javascript to employ jQuery and AJAX techniques to enable asynchronous data retrieval reducing loading times. </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">•</span>
@@ -129,23 +129,23 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">•</span>
-                    <span> Acted as the primary engineering team representative in client interactions, coordinating seven software deployments </span>
+                    <span> Acted as the primary engineering team representative in client interactions, coordinating seven software deployments. </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">•</span>
-                    <span>Managed client relationships during onboarding and provided technical solutions to meet business goals</span>
+                    <span>Managed client relationships during onboarding and provided technical solutions to meet business goals.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">•</span>
-                    <span>Advocated for client needs, leading technical calls with clients to address bugs, feature requests, and technical challenges</span>
+                    <span>Advocated for client needs, leading technical calls with clients to address bugs, feature requests, and technical challenges.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">•</span>
-                    <span>Collaborated with product owners to prioritize and implement new features across three client products</span>
+                    <span>Collaborated with product owners to prioritize and implement new features across three client products.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">•</span>
-                    <span>Collaborated and communicated with remote scrum team members in the U.S. and India while following agile best practices</span>
+                    <span>Collaborated and communicated with remote scrum team members in the U.S. and India while following agile best practices.</span>
                   </li>
                 </ul>
               </div>
