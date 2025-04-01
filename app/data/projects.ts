@@ -261,7 +261,6 @@ export interface Project {
               "Designed Lambda function to proxy and transform OpenWeather API responses",
               "Implemented request validation to prevent malformed coordinate submissions",
               "Created middleware for request authentication and rate limiting",
-              "Built response caching layer to reduce redundant API calls"
             ]
           },
           {
