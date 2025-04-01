@@ -141,7 +141,7 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">•</span>
-                    <span>Collaborated with product owners to prioritize and implement new features across 3 client products</span>
+                    <span>Collaborated with product owners to prioritize and implement new features across three client products</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">•</span>
