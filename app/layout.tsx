@@ -5,6 +5,7 @@ import "./globals.css"
 import { Navigation } from "@/components/layout/navigation"
 import { Footer } from "@/components/layout/footer"
 import { ThemeProvider } from "@/components/theme/theme-provider"
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({
   subsets: ["latin"],
