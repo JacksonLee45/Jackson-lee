@@ -36,7 +36,7 @@ export default function HomePage() {
             <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-muted rounded-full opacity-50"></div>
             <div className="relative z-10 aspect-square bg-muted rounded-2xl overflow-hidden border border-border">
               <Image
-                src="/images/headshot-bw.png"
+                src="/images/headshot-new-bw.png"
                 alt="Jackson Lee"
                 width={600}
                 height={600}
