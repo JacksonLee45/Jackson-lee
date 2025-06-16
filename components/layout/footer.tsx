@@ -11,7 +11,7 @@ export function Footer() {
               Jackson<span className="text-muted-foreground">Lee</span>
             </Link>
             <p className="mt-4 text-muted-foreground">
-              Software Engineer crafting technical systems with focus on solution delivery.
+              Software Engineer crafting technical systems with focus on customer success.
             </p>
           </div>
 

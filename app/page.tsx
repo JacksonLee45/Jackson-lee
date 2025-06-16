@@ -20,7 +20,7 @@ export default function HomePage() {
               <h2 className="heading-md text-muted-foreground">Software Engineer</h2>
             </div>
             <p className="body-lg text-muted-foreground max-w-md">
-            I craft technical solutions that create real-world impact. By combining technical expertise with authentic collaboration, I build systems that move the needle. For me, success goes beyond code, it's about the meaningful difference my work makes for organizations and their users.
+            I turn complex technical solutions into customer wins. By translating business challenges into scalable implementations, I ensure clients not only adopt new systems but thrive with them. For me, success isn't just delivering code, it's empowering customers to achieve their goals through thoughtful technical guidance.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="text-lg px-8">
@@ -63,15 +63,25 @@ export default function HomePage() {
           </div>
           <div className="md:col-span-2">
             <p className="body-lg mb-6">
-            As a software engineer with over three years of experience crafting enterprise SaaS applications, I blend technical expertise
-            with business acumen. Since earning my Computer Science degree with a minor in Business from the University of Colorado Boulder,
-            I've specialized in building full-stack web solutions at Cognizant using C#, .NET, SQL, and JavaScript.
+            As a customer-focused software engineer with over three years of experience delivering enterprise
+            SaaS solutions, I specialize in turning technical complexity into customer success. 
+            Since earning my Computer Science degree with a minor in Business from the University of Colorado 
+            Boulder, I've honed my expertise in full-stack development at Cognizant, working with C#, .NET, SQL, 
+            and JavaScript to solve real business challenges.
             </p>
             <p className="body-lg mb-6">
-            My professional strength lies in understanding business needs first, then crafting technical solutions to address them. 
-            I thrive when leading client conversations about system enhancements, feature development, and technical challenges. 
-            By successfully managing multiple software deployments, I've demonstrated my ability to deliver solutions that address
-            immediate needs while establishing foundations for future growth.
+            My greatest strength is translating customer needs into scalable technical solutions. I excel at 
+            guiding clients through complex implementations, leading technical discussions that bridge the gap
+            between business objectives and system capabilities. Through coordinating multiple software 
+            deployments and managing customer relationships from onboarding through ongoing support, I've learned 
+            that the best solutions aren't just technically sound, they're adopted, embraced, and drive measurable 
+            business outcomes.
+            </p>
+            <p className="body-lg mb-6">
+            What sets me apart is my commitment to customer advocacy within the engineering process. I've 
+            represented engineering teams in client interactions, ensuring technical decisions align with 
+            customer success while championing client needs during development cycles. This dual perspective 
+            has taught me that sustainable solutions require both technical excellence and deep customer understanding.
             </p>
             <p className="body-lg mb-10">
             Away from the keyboard, I find energy and balance in outdoor pursuits. Marathon running became an
