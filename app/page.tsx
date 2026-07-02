@@ -17,10 +17,10 @@ export default function HomePage() {
             <div>
               <p className="text-muted-foreground text-lg mb-2 font-medium">Hello, I'm</p>
               <h1 className="heading-xl mb-4">Jackson Lee</h1>
-              <h2 className="heading-md text-muted-foreground">Software Engineer</h2>
+              <h2 className="heading-md text-muted-foreground">Solutions Engineer</h2>
             </div>
             <p className="body-lg text-muted-foreground max-w-md">
-            I turn complex technical solutions into customer wins. By translating business challenges into scalable implementations, I ensure clients not only adopt new systems but thrive with them. For me, success isn't just delivering code, it's empowering customers to achieve their goals through thoughtful technical guidance.
+            I bridge the gap between technology and business, turning complex technical challenges into customer wins. As a solutions engineer, I specialize in helping customers implement custom AI agents, whether Claude, ChatGPT, or Copilot, that connect to our MCP server, partnering with teams across the full customer lifecycle so clients don't just adopt a platform, they thrive with it.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="text-lg px-8">
@@ -63,33 +63,32 @@ export default function HomePage() {
           </div>
           <div className="md:col-span-2">
             <p className="body-lg mb-6">
-            As a customer-focused software engineer with over three years of experience delivering enterprise
-            SaaS solutions, I specialize in turning technical complexity into customer success. 
-            Since earning my Computer Science degree with a minor in Business from the University of Colorado 
-            Boulder, I've honed my expertise in full-stack development at Cognizant, working with C#, .NET, SQL, 
-            and JavaScript to solve real business challenges.
+            I'm a solutions engineer at Frontify, where I sit at the intersection of product and commercial teams,
+            helping marketers and designers at brands get the most out of our platform. My specialty is consulting
+            customers and prospects on building custom AI agents, whether Claude, ChatGPT, or Copilot, that connect
+            to our MCP server, and partnering with Customer Success Managers to design the workflows that turn that
+            technology into real outcomes. I work across the full lifecycle, from pre-sales scoping and prototypes through
+            post-sale implementation, while feeding real-world insights back into product strategy.
             </p>
             <p className="body-lg mb-6">
-            My greatest strength is translating customer needs into scalable technical solutions. I excel at 
-            guiding clients through complex implementations, leading technical discussions that bridge the gap
-            between business objectives and system capabilities. Through coordinating multiple software 
-            deployments and managing customer relationships from onboarding through ongoing support, I've learned 
-            that the best solutions aren't just technically sound, they're adopted, embraced, and drive measurable 
-            business outcomes.
+            I came to this role through full-stack engineering. After earning my Computer Science degree with a minor
+            in Business from the University of Colorado Boulder, I spent three years at Cognizant building enterprise
+            SaaS solutions with C#, .NET, SQL, and JavaScript. That foundation, working with APIs, SSO, and frontend
+            technologies like React and TypeScript, is what lets me speak fluently with both engineers and customers.
             </p>
             <p className="body-lg mb-6">
-            What sets me apart is my commitment to customer advocacy within the engineering process. I've 
-            represented engineering teams in client interactions, ensuring technical decisions align with 
-            customer success while championing client needs during development cycles. This dual perspective 
-            has taught me that sustainable solutions require both technical excellence and deep customer understanding.
+            My greatest strength is translating customer needs into scalable technical solutions. I excel at guiding
+            clients through complex implementations and leading technical discussions that bridge the gap between
+            business objectives and what the platform can do. Through coordinating software deployments and managing
+            customer relationships from onboarding through ongoing support, I've learned that the best solutions
+            aren't just technically sound, they're adopted, embraced, and drive measurable business outcomes.
             </p>
             <p className="body-lg mb-10">
-            Away from the keyboard, I find energy and balance in outdoor pursuits. Marathon running became an
-            unexpected passion that pushes my endurance and grit with each race. 
-            Alpine skiing has been a lifelong adventure from the icy slopes of Vermont to the powder of
-            the Rockies. And after discovering paragliding, I dedicated myself to the sport, spending months learning to 
-            fly and never looking back. These activities provide the perfect counterbalance to my 
-            technical work, offering both challenge and thrill in the natural world.
+            When I'm not at the keyboard, I'm usually outside. I picked up marathon running somewhere along the way
+            and got hooked on chasing longer distances. I grew up skiing Vermont and now spend as
+            much time as I can in the of the Rockies. And a few years back I learned to paraglide, which pretty
+            quickly turned into a bit of an obsession. All of it is a nice change of pace from the technical work, and
+            a good excuse to spend time outdoors.
             </p>
           </div>
         </div>
@@ -106,6 +105,40 @@ export default function HomePage() {
           </div>
           <div className="md:col-span-2">
             <div className="space-y-12">
+              {/* Frontify Position */}
+              <div className="relative pl-8 border-l-2 border-muted">
+                <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1.5"></div>
+                <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                  <h3 className="text-2xl font-bold">Solutions Engineer</h3>
+                  <div className="flex items-center gap-2">
+                    <span className="text-muted-foreground">Frontify</span>
+                    <span className="bg-muted px-2 py-1 rounded-full text-xs">Aug 2025 - Present</span>
+                  </div>
+                </div>
+                <ul className="space-y-3 mt-4">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Specialize in consulting customers and prospects on building custom AI agents, whether Claude, ChatGPT, or Copilot, that connect to Frontify's MCP server, guiding adoption from initial evaluation through production rollout.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Serve as the technical product expert across the full customer lifecycle, supporting the commercial team pre-sale to help land and close deals, and driving successful implementation and expansion post-sale.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Partner with Customer Success Managers to design the workflows and integrations that get each customer the most value out of the platform.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Provide technical consulting and build prototypes for integrations and custom development across tools like Figma, DAMs, PIMs, CMSs, and InDesign using Frontify's APIs and SDKs.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Bridge product teams in Switzerland and commercial teams in the US, surfacing insights from customer interactions back into product strategy and continually pushing the limits of what's possible with the platform.</span>
+                  </li>
+                </ul>
+              </div>
+
               {/* Cognizant Position */}
               <div className="relative pl-8 border-l-2 border-muted">
                 <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1.5"></div>
@@ -113,7 +146,7 @@ export default function HomePage() {
                   <h3 className="text-2xl font-bold">Software Engineer</h3>
                   <div className="flex items-center gap-2">
                     <span className="text-muted-foreground">Cognizant</span>
-                    <span className="bg-muted px-2 py-1 rounded-full text-xs">2022 - Present</span>
+                    <span className="bg-muted px-2 py-1 rounded-full text-xs">2022 - Aug 2025</span>
                   </div>
                 </div>
                 <ul className="space-y-3 mt-4">
@@ -207,7 +240,7 @@ export default function HomePage() {
           </div>
           <div className="md:col-span-2">
             <div className="grid grid-cols-2 gap-y-8 gap-x-16">
-              {["C#", "React", "TypeScript", "Next.js",  "SQL", "Angular", "AWS", "Azure", "Tailwind CSS", "Python", "Prompt Engineering", "API Development"].map(
+              {["AI Integrations", "MCP", "Prompt Engineering", "React", "TypeScript", "Next.js", "C#", "SQL", "Python", "REST & GraphQL APIs", "SSO / SAML", "Solution Architecture", "Technical Pre-Sales", "AWS", "Azure", "Tailwind CSS"].map(
                 (skill, index) => (
                   <div key={skill} className="border-b border-border pb-2 group">
                     <div className="flex items-baseline">

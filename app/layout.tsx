@@ -19,11 +19,11 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Jackson Lee",
-  description: "Portfolio of Jackson Lee, a Software Engineer",
+  description: "Portfolio of Jackson Lee, a Solutions Engineer",
   generator: 'v0.dev',
   openGraph: {
-      title: "Jackson Lee | Software Engineer",
-      description: "Portfolio of Jackson Lee, a Software Engineer specializing in full-stack development",
+      title: "Jackson Lee | Solutions Engineer",
+      description: "Portfolio of Jackson Lee, a Solutions Engineer bridging technology and business",
       url: "https://jacksonleeee.com",
       siteName: "Jackson Lee Portfolio",
       images: [

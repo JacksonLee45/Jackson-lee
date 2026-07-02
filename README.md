@@ -1,6 +1,6 @@
 # Jackson Lee Portfolio
 
-A modern, responsive portfolio website built with Next.js and Tailwind CSS showcasing my work as a software engineer.
+A modern, responsive portfolio website built with Next.js and Tailwind CSS showcasing my work as a solutions engineer.
 
 ![Portfolio Preview](/images/placeholder.svg)
 
